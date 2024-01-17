@@ -37,6 +37,7 @@ color: #E3F4FE;
 .searchArea .searchCircle{
    padding-left: 85%;
    height: 2rem;
+   padding-right: 5px;
    
 }
 .searchArea .searchCircle .searchIcon{
