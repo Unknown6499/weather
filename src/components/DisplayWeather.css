@@ -1,0 +1,98 @@
+/* ------------------------wrapper div------------------------ */
+.wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+color: #E3F4FE;
+}
+
+/* ------------------container div----------- */
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 4rem);
+    width: 400px;
+    background-color:  #1C9CF6;
+    border-radius: 12px;
+}
+
+/* ------------------------SEARCH AREA------------------------ */
+.searchArea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.searchArea input{
+    margin: 0 10px;
+    width: 170%;
+    border-radius: 2rem;
+    height: 2rem;
+    background-color:#E3F4FE;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+.searchArea .searchCircle{
+   padding-left: 85%;
+   height: 2rem;
+   
+}
+.searchArea .searchCircle .searchIcon{
+    height: 100%;
+    width: 100%;
+}
+/* -----------------WEATHER AREA----------------- */
+.weatherArea{
+    text-align: center;
+}
+.weatherArea .location{
+    font-size: 3rem;
+    color: white;
+}
+.weatherArea .country{
+    color: white;
+    font-size: 1rem;
+}
+.weatherArea .icon{
+    font-size: 5rem;
+}
+
+/* -------------BOTTOM SECTION/ WIND AND HUMIDITY------------ */
+.bottomInfoArea{
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+background-color: rgba(255, 255, 255, 0.52);
+color: white;
+padding: 5px;
+border-radius: 12px;
+margin: 0 10px;
+}
+.bottomInfoArea .humidity{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bottomInfoArea .humidIcon{
+    height: 100%;
+    width: 100%;
+}
+.bottomInfoArea .wind{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bottomInfoArea .windIcon{
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------MEDIA QUERIES FOR MOBILE-------------- */
+@media  screen and (max-width:640px) {
+        .wrapper{
+            padding: 0;
+        }
+        .container{
+            border-radius: 0;
+            height: 100vh;
+        }
+    }
