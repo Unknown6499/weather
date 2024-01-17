@@ -3,7 +3,7 @@ import './DisplayWeather.css'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { WiHumidity } from 'react-icons/wi'
 import { SiWindicss } from 'react-icons/si'
-import { RiLoaderFill } from 'react-icons/ri'
+// import { RiLoaderFill } from 'react-icons/ri'
 
 
 type Location = {
@@ -38,7 +38,7 @@ type WeatherData = {
 };
 
 const DisplayWeather: React.FC = () => {
-  const [location, setLocation] = useState('')
+  // const [location, setLocation] = useState('')
   const [data, setData]= useState<WeatherData | null>(null)
   const fetchWeather = async ( lat:number, long:number):Promise<WeatherData> => {
     const res = await fetch(
@@ -60,10 +60,10 @@ const DisplayWeather: React.FC = () => {
     <div className="wrapper">
       <div className="container">
         <div className="searchArea">
-          <input type="text" placeholder="Enter Location" onChange={(e) => setLocation(e.target.value) } />
+          <input type="text" placeholder="Enter Location"  />
 
           <div className="searchCircle">
-            <AiOutlineSearch className="searchIcon"  onClick={()=> fetchWeather(location)}/>
+            <AiOutlineSearch className="searchIcon" />
           </div>
         </div>
         <div className="weatherArea">
