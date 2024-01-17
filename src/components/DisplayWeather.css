@@ -58,7 +58,34 @@ color: #E3F4FE;
 .weatherArea .icon{
     font-size: 5rem;
 }
+/* -------------LOADING SPINNER------------------- */
+.loading{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.loadingIcon{
+    font-size: 3rem;
+    animation: spin 2s linear infinite;
+}
+.loading p{
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+@keyframes spin{
+    from
+    {transform:rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+
+}
 /* -------------BOTTOM SECTION/ WIND AND HUMIDITY------------ */
 .bottomInfoArea{
     display: grid;
